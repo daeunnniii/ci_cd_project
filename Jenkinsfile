@@ -4,7 +4,7 @@ node {
         git 'https://github.com/daeunnniii/ci_cd_project.git'
     }
     stage('Build image') {
-        app = docker.build("pjbear/prbasedtest")
+        app = docker.build("daeunnniii/prbasedtest")
     }
     stage('Test image') {
         app.inside {
